@@ -1,12 +1,16 @@
 import './App.css';
 import AddBox from './components/AddBox';
 import Header from './components/Headers';
+import ProductList from './components/ProductList';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <AddBox />
+      <div className="main">
+        <AddBox />
+        <ProductList />
+      </div>
     </div>
   );
 }

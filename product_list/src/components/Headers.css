@@ -26,7 +26,7 @@
     grid-column-gap: 5px;
     grid-auto-rows: minmax(15px, auto);
     align-self: end;
-    justify-self: start;
+    justify-self: end;
 
     padding:  10px 11px 11px 16px;
     margin: 0;

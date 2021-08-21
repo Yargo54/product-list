@@ -13,7 +13,7 @@ function AddBox () {
                 </label>
                 <label className="description-label">
                     <span className="text-label">Описание товара</span>
-                    <textarea  rows="5" cols="30" placeholder="Введите описание товара"></textarea>
+                    <textarea className="description-textarea" rows="5" cols="30" placeholder="Введите описание товара"></textarea>
                 </label>
                 <label className="url-label">
                     <span className="text-label">

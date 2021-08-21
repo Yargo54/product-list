@@ -3,7 +3,7 @@
 
 .add-div{
     display: grid;
-    width: 332px;
+    height: 440px;
     margin-left: 32px;
     margin-top: 16px;  
     background: #FFFEFB;
@@ -55,6 +55,13 @@ input, textarea {
 
 input:focus{
    outline-color: red;
+}
+
+.description-textarea{
+    height: 125px;
+    padding-top: 10px;
+    padding-bottom: 0;
+    resize: none;
 }
 
 .required-dot{
