@@ -2,14 +2,14 @@
 
 .header{
     display: grid;
-    grid-template-columns: 279px 153px;
-    grid-column-gap: 1008px;
-    grid-auto-rows: minmax(67px, auto);
+    grid-template-columns: 279px 153px; /*размеры блоков в ширину*/
+    grid-column-gap: 1008px; /*отсутпы в колонках*/
+    grid-auto-rows: minmax(67px, auto); /*размер блоков (строк) в высоту*/
 }
 
 .header-text{
-    align-self: end;
-    justify-self: end;
+    align-self: end; /*положение по вертикали*/
+    justify-self: end; /*положение по горизонтали*/
 
     margin: 0;
     font-family: "Source Sans Pro, sans-serif";
