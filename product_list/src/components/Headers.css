@@ -3,7 +3,7 @@
 .header{
     display: grid;
     grid-template-columns: 279px 153px; /*размеры блоков в ширину*/
-    grid-column-gap: 1008px; /*отсутпы в колонках*/
+    grid-column-gap: 945px; /*отсутпы в колонках*/
     grid-auto-rows: minmax(67px, auto); /*размер блоков (строк) в высоту*/
 }
 
@@ -12,7 +12,7 @@
     justify-self: end; /*положение по горизонтали*/
 
     margin: 0;
-    font-family: "Source Sans Pro, sans-serif";
+    font-family: "Source Sans Pro", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 28px;
@@ -21,26 +21,27 @@
 }
 
 .header-button{
-    display: grid;
+    /* display: grid;
     grid-template-columns: 78px 11.49px;
     grid-column-gap: 5px;
-    grid-auto-rows: minmax(15px, auto);
+    grid-auto-rows: minmax(15px, auto); */
+    width: 190px;
     align-self: end;
-    justify-self: end;
-
+    justify-self: start;
     padding:  10px 11px 11px 16px;
     margin: 0;
     background: #FFFEFB;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
-    border: none;
+    border: #FFFEFB;
+    outline: #FFFEFB;
+    color: #B4B4B4;
 }
 
 .button-text{
     align-self: center;
-
     margin: 0;
-    font-family: "Source Sans Pro, sans-serif";
+    font-family: "Source Sans Pro", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;

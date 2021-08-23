@@ -16,7 +16,7 @@
     display: grid;
     grid-template-columns: 284px;
     grid-auto-rows: minmax(53px, auto);
-    grid-row-gap: 16px;
+    grid-row-gap: 6px;
     justify-self: center;
 }
 
@@ -28,7 +28,7 @@
     align-self: end; 
     justify-self: start; 
 
-    font-family: "Source Sans Pro, sans-serif";
+    font-family: "Source Sans Pro", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 10px;
@@ -46,15 +46,29 @@ input, textarea {
     padding-top: 10px;
     padding-left: 16px;
     padding-bottom: 11px;
-    font-family: "Source Sans Pro, sans-serif";
+    font-family: "Source Sans Pro", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 15px;
 }
 
+textarea{
+    outline: none;
+}
+
 input:focus{
    outline-color: red;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.warning:focus-visible .warning-message{
+    display: initial;
 }
 
 .description-textarea{
@@ -75,7 +89,7 @@ input:focus{
     background: #EEEEEE;
     border-radius: 10px;
     border: none;
-    font-family: "Inter, sans-serif";
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -83,4 +97,43 @@ input:focus{
     text-align: center;
     letter-spacing: -0.02em;
     color: #B4B4B4;
+}
+
+.add-button-active{
+    height: 36px;
+    align-self: center;
+    background: #7BAE73;
+    border-radius: 10px;
+    border: none;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+
+.warning-message{
+    display: none;
+    font-family: "Source Sans Pro", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 10px;
+    letter-spacing: -0.02em;
+    color: #FF8484;
+    margin-top: 4px;
+}
+
+.visible{
+    font-family: "Source Sans Pro", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 10px;
+    letter-spacing: -0.02em;
+    color: #FF8484;
+    margin-top: 4px;
 }
