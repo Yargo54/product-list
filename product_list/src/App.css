@@ -1,0 +1,13 @@
+.main{
+  display: grid;
+  grid-template-columns: 364px 1028px;
+  grid-column-gap: 16px ;
+}
+
+.product-list{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+  margin-top: 16px;
+  justify-self: start;
+}
