@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import AddBox from './components/AddBox';
 import Header from './components/Headers';
@@ -6,9 +6,12 @@ import ProductCard from './components/ProductCard';
 
 function App() {
 
-  const [products, setProducts] = useState([]);
-  const [saveProducts, setSaveProducts] = useState([]);
+  const [products, setProducts] = useState(JSON.parse(localStorage.getItem("MyArr")) || []);
 
+  useEffect(() => {
+    localStorage.setItem("MyArr", JSON.stringify([...products]));
+    console.log('update!')
+  }, [products])
   const addProduct = (nameProduct, descriptionProduct, urlProduct, priceProduct) => {
     if(nameProduct) {
       const newProduct = {
@@ -19,7 +22,6 @@ function App() {
         price: priceProduct
       }
       setProducts([...products, newProduct]);
-      setSaveProducts([...products, newProduct]);
     }
   }
 
@@ -38,11 +40,8 @@ function App() {
           return - 1
         }
       })]);
-    } else if (value==="По умолчанию"){
-      massiv = saveProducts;
-      setProducts([...massiv]);
     }
-  }
+  } 
 
   return (
     <>
